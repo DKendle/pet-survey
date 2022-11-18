@@ -3,6 +3,10 @@ html{
     color:black;
 }
 
+h1,p,section{
+    text-align: center;
+}
+
 label{
     display:block;
 }

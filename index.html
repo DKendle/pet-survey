@@ -9,34 +9,47 @@
     <body>
         <h1>Pet Survey</h1>
         <p>Please fill out the pet survey information below.</p>
-        <section>
-            <form id="pet-form">
-                <label for="name">Enter Your Name:
-                    <input id="name"type="text" name="Name" value="Joe Shmoe" required/>
-                </label>
 
-                <label for="email">Enter Your Email:</label>
-                <input id="email"type="text" name="email" placeholder="JoeShmoe@google.com" required/>
+            <form id="pet-form" >
+                <fieldset>
+                    <label for="name">Enter Your Name:
+                        <input id="name"type="text" name="Name" placeholder="Joe Schmoe" required/>
+                    </label>
 
-                <label>Do you have a pet?</label>
-                    <input type="radio" name="yes-no"value="yes"/> Yes
-                    <input type="radio" name="yes-no"value="no"/> No
+                    <label for="email">Enter Your Email:
+                        <input id="email"type="text" name="email" placeholder="JoeShmoe@google.com" required/>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>Do you have a pet?
+                        <input type="radio" name="yes-no"value="yes"/> Yes
+                        <input type="radio" name="yes-no"value="no"/> No
+                    </label>
 
-                <label for="pet-type">I have a:
+                    <label for="pet-name">Enter Pet Name:
+                        <input id="pet-name"type="text" placeholder="Tony-Bologna"/>
+                    </label>
+                    
+                    <label>How many pets do you have?
+                        <input type="checkbox"/>
+                        <input type="checkbox"/>
+                        <input type="checkbox"/>
+                    </label>
+
+                <label for="pet-type">My pet is a:
                 <select id="pet-type">
+                    <option>Select One</option>
                     <option>Cat</option>
                     <option>Dog</option>
                     <option>Bird</option>
                     <option>Reptile</option>
                     <option>Other</option>
                 </select>
-            </label>
-            <label for="pet-name">Enter Pet Name:
-                <input id="pet-name"type="text" placeholder="Tony-Bologna"/>
-            </label>
+                </label>
 
-            <input type="submit" value="Submit"/>
+        </fieldset>
+            <input type="submit" value="Submit" onSubmit=/>
             </form>
-        </section>
+        
     </body>
 </html>

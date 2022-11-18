@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
         <title>Pet Survey</title>
     </head>
     <body>
@@ -10,15 +11,26 @@
         <p>Please fill out the pet survey information below.</p>
         <section>
             <form id="pet-form">
-                <input type="text" name="name" value="name" required/>
-                <input type="text" name="email" value="email" required/>
+                <label for="name">Enter Your Name:
+                    <input id="name"type="text" name="Name" value="Name" required/>
+                </label>
+
+                <label for="email">Enter Your Email:
+                    <input id="email"type="text" name="email" value="Email" required/>
+                </label>
                 
-                <select>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                    <option></option>
+                <label for="pet-type">I have a:
+                <select id="pet-type">
+                    <option>Cat</option>
+                    <option>Dog</option>
+                    <option>Bird</option>
+                    <option>Reptile</option>
+                    <option>Other</option>
                 </select>
+            </label>
+            <label for="pet-name">Enter Pet Name:
+                <input id="pet-name"type="text" placeholder="Tony"/>
+            </label>
             </form>
         </section>
     </body>
